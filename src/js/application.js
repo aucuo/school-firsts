@@ -6,7 +6,6 @@ if (applicationEl) {
 
   // buttons
   applicationEl.querySelector('.application__btn').onclick = () => {innerEl.style.display = 'block';};
-  innerEl.querySelector('.inner__close').onclick = () => {innerEl.style.display = '';};
 
   // form
   const form = applicationEl.querySelector('#applForm');

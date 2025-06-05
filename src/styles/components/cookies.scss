@@ -3,10 +3,10 @@
 @use "../variables" as v;
 
 .cookies {
-    @include m.flex(center, center);
+    @include m.flex(space-between, center);
     gap: 14px;
     max-width: 486px;
-    z-index: 100;
+    z-index: 110;
     position: fixed;
     left: 14px;
     bottom: 14px;

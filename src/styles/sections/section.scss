@@ -67,4 +67,56 @@
             max-width: unset;
         }
     }
+
+    &__actions {
+        @include m.flex(flex-end, center);
+        gap: 40px;
+    }
+
+    &__link {
+        position: relative;
+        @include m.flex(flex-start, center);
+        gap: 12px;
+        padding-right: 40px;
+        color: v.$color-blue;
+
+        &:after {
+            @include m.pseudo();
+            right: 0;
+            background-color: v.$color-black;
+            width: 1px;
+            height: 30px;
+            opacity: .08;
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__slider-container {
+        @media (max-width: 768px) {
+            overflow: unset;
+            padding: 0;
+        }
+    }
+
+    .slider {
+        max-width: 1800px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            padding: 0 12px;
+        }
+
+        &__navigation {
+            @include m.flex(center, center);
+            gap: 12px;
+        }
+
+        &__slide {
+            height: auto;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 const fixedElements = [
   document.querySelector('.header-fixed'),
-  document.querySelector('#application'),
+  document.querySelector('#application .application__btn'),
 ].filter(el => el !== null); // Фильтруем возможные null'ы
 
 const popupEls = document.querySelectorAll('[data-popup]');

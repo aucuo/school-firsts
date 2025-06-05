@@ -16,6 +16,7 @@
     }
 
     &__card {
+        flex: 1;
         &:first-child {
             border-radius: 0 18px 18px 0;
         }

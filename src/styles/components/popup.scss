@@ -28,7 +28,8 @@
     &__inner {
         position: relative;
         max-width: 750px;
-
+        max-height: 90vh;
+        overflow-y: auto;
         @media (max-width: 768px) {
             max-width: unset;
         }

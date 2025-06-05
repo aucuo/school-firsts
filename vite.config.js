@@ -11,6 +11,7 @@ export default defineConfig({
   plugins: [
     tsconfigPaths(),
     ViteImageOptimizer({
+      test: /\.(jpe?g|png|gif|tiff|webp|avif)$/i,
       png: {
         quality: 85,
       },

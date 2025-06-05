@@ -4,26 +4,34 @@
 
 .application {
     @include m.flex(flex-end);
-    z-index: 90;
+    z-index: 100;
     position: fixed;
     right: 14px;
     bottom: 14px;
     width: 635px;
 
     @media (max-width: 768px) {
-        left: 12px;
-        right: 12px;
-        bottom: 8px;
+        inset: auto 0 0;
+        width: unset;
     }
 
     &__btn {
         @media (max-width: 768px) {
             width: 100%;
+            margin: auto 12px 8px;
         }
 
         svg {
             width: 24px;
             height: 24px;
+        }
+    }
+
+    .popup {
+        @media (min-width: 769px) {
+            position: absolute;
+            inset: 0;
+            background-color: unset;
         }
     }
 

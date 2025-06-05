@@ -10,3 +10,5 @@ import './popup.js'
 
 // sections
 import './hero.js'
+import './teachers.js'
+import './reviews.js'

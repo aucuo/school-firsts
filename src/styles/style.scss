@@ -9,9 +9,14 @@
 // components
 @use "components/btn";
 @use "components/form";
+@use "components/card";
 @use "components/cookies";
 @use "components/application";
+@use "components/popup";
 
 // sections
-@use "sections/hero";
 @use "sections/section";
+@use "sections/hero";
+@use "sections/activities";
+@use "sections/pros";
+@use "sections/practice";

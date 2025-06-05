@@ -4,13 +4,23 @@
 
 .application {
     @include m.flex(flex-end);
-    z-index: 100;
+    z-index: 90;
     position: fixed;
     right: 14px;
     bottom: 14px;
     width: 635px;
 
+    @media (max-width: 768px) {
+        left: 12px;
+        right: 12px;
+        bottom: 8px;
+    }
+
     &__btn {
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
         svg {
             width: 24px;
             height: 24px;

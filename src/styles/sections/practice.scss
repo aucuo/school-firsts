@@ -1,0 +1,32 @@
+
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.practice-sec {
+
+    &__title,
+    &__text {
+        text-align: center;
+        max-width: 650px;
+    }
+
+    &__list {
+        @include m.flex();
+        gap: 40px;
+    }
+
+    &__card {
+        &:first-child {
+            border-radius: 0 18px 18px 0;
+        }
+
+        &:last-child {
+            border-radius: 18px 0 0 18px;
+        }
+
+        &-title {
+            width: 500px;
+            line-height: 130%;
+        }
+    }
+}

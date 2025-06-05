@@ -15,6 +15,13 @@
     padding: 24px;
     border-radius: 30px;
 
+    @media (max-width: 768px) {
+        left: 12px;
+        right: 12px;
+        bottom: 8px;
+        max-width: unset;
+    }
+
     &--hidden {
         display: none;
     }
@@ -23,6 +30,10 @@
         font-size: 14px;
         line-height: 130%;
         font-weight: 300;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
 
         a {
             text-decoration: underline;
@@ -35,5 +46,9 @@
         text-transform: uppercase;
         color: v.$color-blue;
         border-radius: 16px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }

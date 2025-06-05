@@ -1,0 +1,16 @@
+
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.activities-sec {
+    padding-top: 0;
+
+    &__wrapper {
+        @include m.flex();
+        gap: 40px;
+    }
+
+    &__card {
+
+    }
+}

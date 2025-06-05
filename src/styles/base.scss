@@ -9,10 +9,15 @@
 
 body {
     font-size: 1.6rem;
+    font-weight: 300;
     line-height: 150%;
     color: v.$color-black;
     background-color: v.$color-light-blue-gray;
     min-height: 200vh;
+
+    @media (max-width: 1024px) {
+        font-size: 1.4rem;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -20,7 +25,8 @@ h1,h2,h3,h4,h5,h6 {
     @include m.text-style(700, 2.4rem, 120%);
     font-size: 24px;
     line-height: 120%;
-    font-weight: 700;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 [contenteditable] {
@@ -40,5 +46,15 @@ a {
     &:hover {
         text-decoration: underline;
         color: v.$color-orange;
+    }
+}
+
+.shadow-bottom {
+    &:after {
+        z-index: 0;
+        @include m.pseudo();
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(245.27deg, rgba(0, 0, 0, 0) 32.73%, rgba(0, 0, 0, 0.7) 99.83%);
     }
 }

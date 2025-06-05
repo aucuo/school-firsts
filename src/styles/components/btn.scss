@@ -50,8 +50,8 @@
     }
 
     svg {
-        width: 16px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
     }
 
     // Размеры
@@ -102,5 +102,15 @@
     &--blue {
         @include button-color(v.$color-blue);
         @include button-states(v.$color-light-blue, v.$color-blue);
+    }
+
+    &--violet {
+        @include button-color(v.$color-violet);
+        @include button-states(v.$color-light-violet, v.$color-violet);
+    }
+
+    &--green {
+        @include button-color(v.$color-green);
+        @include button-states(v.$color-light-green, v.$color-green);
     }
 }

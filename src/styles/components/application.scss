@@ -1,0 +1,119 @@
+
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.application {
+    @include m.flex(flex-end);
+    z-index: 100;
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    width: 635px;
+
+    &__btn {
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .inner {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: v.$color-white;
+        padding: 32px;
+        border-radius: 18px;
+        width: 100%;
+        overflow: hidden;
+
+        &__close {
+            z-index: 20;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            color: #D5D5D5;
+            transition: v.$transition;
+
+            &:hover {
+                color: #c5c5c5;
+            }
+        }
+
+        &__title {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        &__input {
+            margin-bottom: 18px;
+        }
+
+        &__check {
+            a {
+                color: v.$color-blue;
+                text-decoration: underline;
+            }
+        }
+
+        &__btn {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .result {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 10;
+            position: absolute;
+            inset: 0;
+            text-align: center;
+            background-color: v.$color-white;
+            padding: 32px;
+
+            &__icon {
+                @include m.flex(center, center);
+                flex-shrink: 0;
+                width: 104px;
+                height: 104px;
+                border-radius: 100px;
+                border: 5px solid v.$color-blue;
+                color: v.$color-blue;
+                margin-bottom: 40px;
+
+                svg {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+
+            &__title {
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: v.$color-blue;
+                margin-bottom: 12px;
+            }
+
+            &__text {
+                color: v.$color-gray;
+            }
+
+            &--error {
+                .result__icon {
+                    color: v.$color-orange;
+                    border-color: v.$color-orange;
+                }
+
+                .result__title {
+                    color: v.$color-orange;
+                }
+            }
+        }
+    }
+}

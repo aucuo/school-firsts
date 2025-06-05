@@ -1,0 +1,81 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.form {
+    &-input {
+        &__editable {
+            @include m.flex(flex-start, center);
+            position: relative;
+            padding: 0 32px;
+            height: 66px;
+            background-color: v.$color-light-gray;
+            border-radius: 18px;
+            font-size: 18px;
+            color: v.$color-black;
+            overflow: hidden;
+            cursor: text;
+
+            span {
+                z-index: 1;
+                position: relative;
+                @include m.flex(flex-start, center);
+                min-width: 1px;
+                outline: none;
+                max-width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+
+                &::-webkit-input-placeholder {
+                }
+            }
+
+            label {
+                cursor: text;
+                color: v.$color-gray;
+            }
+
+            input {
+                @include m.visually-hidden();
+            }
+
+            &[data-required]::after {
+                content: '*';
+                color: red;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    &-check {
+        input[type="checkbox"] {
+            @include m.visually-hidden();
+
+            + label {
+                @include m.flex(flex-start, center);
+                @include m.text-style(300, 14px, 130%);
+                gap: 12px;
+                cursor: default;
+
+                &::before {
+                    @include m.pseudo();
+                    position: static;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid v.$color-blue;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    flex-shrink: 0;
+                }
+            }
+
+            &:checked + label::before {
+                background: v.$color-blue url('assets/icons/success.svg') no-repeat center / 16px;
+            }
+
+            &:disabled + label {
+                opacity: 0.6;
+            }
+        }
+    }
+}

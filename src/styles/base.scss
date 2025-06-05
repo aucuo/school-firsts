@@ -1,0 +1,44 @@
+
+@use "mixins" as m;
+@use "variables" as v;
+
+:root {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: v.$color-black;
+    background-color: v.$color-light-blue-gray;
+    min-height: 200vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Open Sans", system-ui, sans-serif;
+    @include m.text-style(700, 2.4rem, 120%);
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+[contenteditable] {
+    &:focus-visible,
+    &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: v.$transition;
+
+    &:hover {
+        text-decoration: underline;
+        color: v.$color-orange;
+    }
+}

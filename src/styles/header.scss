@@ -1,0 +1,200 @@
+
+@use "mixins" as m;
+@use "variables" as v;
+
+.header {
+    z-index: 100;
+    position: relative;
+    padding-top: 24px;
+    font-size: 18px;
+    line-height: 100%;
+
+    .container {
+        overflow: unset;
+    }
+
+    @media (max-width: 1400px) {
+        font-size: 16px;
+    }
+
+    &__row {
+        @include m.flex(space-between, center);
+
+        @media (min-width: 1201px) {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #33333314;
+        }
+    }
+
+    &__logo {
+        width: 135px;
+        flex-shrink: 0;
+
+        @media (max-width: 1400px) {
+            width: 115px;
+        }
+    }
+
+    .info {
+        @include m.flex(space-between, center);
+        gap: 80px;
+
+        @media (max-width: 1400px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
+        &__item {
+            &-title {
+                margin-bottom: 8px;
+            }
+
+            &-text {
+                color: v.$color-blue-gray;
+            }
+        }
+
+        &__buttons {
+            @include m.flex(space-between, flex-start);
+            gap: 18px;
+
+            .lang-choose {
+                z-index: 1;
+                position: relative;
+                background-color: v.$color-white;
+                border-radius: 100px;
+
+                &:hover {
+                    border-radius: 100px 100px 0 0;
+
+                    .lang-choose__other {
+                        display: block;
+                    }
+                }
+
+                &__other {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    background-color: v.$color-white;
+                    border-radius: 0 0 100px 100px;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        width: 100%;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+        
+        .nav-list {
+            position: relative;
+            @include m.flex(space-between, center);
+            color: v.$color-dark-black;
+            
+            &__link {
+                position: relative;
+
+                &:hover {
+                    color: v.$color-blue;
+                    text-decoration: none;
+                }
+
+                &:not(:last-child) {
+                    padding-right: 20px;
+
+                    &:after {
+                        @include m.pseudo();
+                        background: transparent url('assets/icons/chevron-down.svg') no-repeat center / 14px;
+                        width: 14px;
+                        inset: 0 0 0 auto;
+                        transition: transform .2s ease-in-out;
+                    }
+                }
+            }
+
+            &__item:hover {
+                .nav-inner {
+                    display: block;
+                }
+
+                .nav-list__link {
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .nav-inner {
+            display: none;
+            position: absolute;
+            top: 100%;
+            padding-top: 12px;
+
+            &__wrapper {
+                @include m.flex(flex-start, stretch, column);
+                gap: 24px;
+                padding: 32px;
+                background-color: v.$color-white;
+                border-radius: 18px;
+                box-shadow: 0 0 12px 0 #5F63681A;
+            }
+
+            &__item {
+
+            }
+
+            &__link {
+                &:hover {
+                    color: v.$color-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.header-fixed {
+    z-index: 100;
+    position: fixed;
+    inset: -100px 0 auto;
+    height: 83px;
+    background-color: v.$color-white;
+    @include m.flex(center, stretch);
+    transform: translateY(-100px);
+    transition: transform .2s ease-in-out;
+
+    &--shown {
+        transform: translateY(100px);
+    }
+
+    &__wrapper {
+        @include m.flex(space-between, center);
+        gap: 80px;
+        height: 100%;
+    }
+
+    &__logo {
+        width: 105px;
+        flex-shrink: 0;
+    }
+
+    .nav-inner {
+        padding-top: 31px;
+        left: -32px;
+
+        &__wrapper {
+            position: relative;
+            border-radius: 0 0 18px 18px;
+            box-shadow: 0 18px 24px 0 #5F63680F;
+        }
+    }
+}

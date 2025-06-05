@@ -1,0 +1,39 @@
+
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.cookies {
+    @include m.flex(center, center);
+    gap: 14px;
+    max-width: 486px;
+    z-index: 100;
+    position: fixed;
+    left: 14px;
+    bottom: 14px;
+    background-color: v.$color-blue;
+    color: v.$color-white;
+    padding: 24px;
+    border-radius: 30px;
+
+    &--hidden {
+        display: none;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 130%;
+        font-weight: 300;
+
+        a {
+            text-decoration: underline;
+            font-weight: 400;
+        }
+    }
+    
+    &__btn {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: v.$color-blue;
+        border-radius: 16px;
+    }
+}

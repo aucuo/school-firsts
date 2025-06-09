@@ -15,6 +15,12 @@
             overflow: hidden;
             cursor: text;
 
+            @media (max-width: 768px) {
+                height: 56px;
+                padding: 0 24px;
+                font-size: 16px;
+            }
+
             span {
                 z-index: 1;
                 position: relative;
@@ -55,6 +61,10 @@
                 @include m.text-style(300, 14px, 130%);
                 gap: 12px;
                 cursor: default;
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
 
                 &::before {
                     @include m.pseudo();

@@ -26,8 +26,10 @@
   },
   "dependencies": {
     "@types/node": "^22.15.21",
+    "@yandex/ymaps3-default-ui-theme": "^0.0.19",
     "imask": "^7.6.1",
     "sass": "^1.89.0",
-    "swiper": "^11.2.8"
+    "swiper": "^11.2.8",
+    "ymaps": "^0.2.1"
   }
 }

@@ -4,19 +4,38 @@
 
 .practice-sec {
 
+    &__wrapper {
+        @media (max-width: 768px) {
+            padding: 0 12px;
+        }
+    }
+
     &__title,
     &__text {
+        width: 100%;
         text-align: center;
         max-width: 650px;
+
+        @media (max-width: 768px) {
+            text-align: left;
+            max-width: unset;
+        }
     }
 
     &__list {
         @include m.flex();
         gap: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 12px;
+        }
     }
 
     &__card {
         flex: 1;
+        min-height: 260px;
+
         &:first-child {
             border-radius: 0 18px 18px 0;
         }
@@ -26,8 +45,13 @@
         }
 
         &-title {
-            width: 500px;
+            width: 100%;
+            max-width: 500px;
             line-height: 130%;
+        }
+
+        @media (max-width: 768px) {
+            border-radius: 18px !important;
         }
     }
 }

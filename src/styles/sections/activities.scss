@@ -8,9 +8,33 @@
     &__wrapper {
         @include m.flex();
         gap: 40px;
+
+        @media (max-width: 1300px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1024px) {
+            gap: 12px;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__card {
+        width: 100%;
+        flex: 1;
+        min-width: 370px;
+        height: 480px;
 
+        @media (max-width: 1300px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            max-height: 280px;
+            min-width: unset;
+        }
     }
 }

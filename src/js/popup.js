@@ -1,23 +1,10 @@
-const fixedElements = [
-  document.querySelector('.header-fixed'),
-  document.querySelector('#application .application__btn'),
-].filter(el => el !== null); // Фильтруем возможные null'ы
+import { blockScreen, unblockScreen } from './_utils.js'
 
 const popupEls = document.querySelectorAll('[data-popup]');
 const popupTargetsEls = document.querySelectorAll('[data-popup-target]');
 
 let lastOpenedPopup = null;
-let scrollbarWidth = 0;
 
-function getScrollbarWidth() {
-  return window.innerWidth - document.documentElement.clientWidth;
-}
-
-function resetFixedElements() {
-  fixedElements.forEach(fixedElement => {
-    fixedElement.style.marginRight = '';
-  });
-}
 
 popupTargetsEls.forEach((targetEl) => {
   const popupInstanceEl = document.querySelector(`[data-popup="${targetEl.dataset.popupTarget}"]`);
@@ -27,14 +14,7 @@ popupTargetsEls.forEach((targetEl) => {
       lastOpenedPopup.style.display = 'none';
     }
 
-    scrollbarWidth = getScrollbarWidth();
-
-    document.body.style.overflow = 'hidden';
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-
-    fixedElements.forEach(fixedElement => {
-      fixedElement.style.marginRight = `${scrollbarWidth}px`;
-    });
+    blockScreen();
 
     popupInstanceEl.style.display = 'flex';
     lastOpenedPopup = popupInstanceEl;
@@ -49,8 +29,9 @@ popupEls.forEach((popupEl) => {
       popupEl.style.display = 'none';
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
-      resetFixedElements();
       lastOpenedPopup = null;
+
+      unblockScreen();
     });
   }
 });
@@ -60,7 +41,8 @@ document.addEventListener('keydown', (e) => {
     lastOpenedPopup.style.display = 'none';
     document.body.style.overflow = '';
     document.body.style.paddingRight = '';
-    resetFixedElements();
     lastOpenedPopup = null;
+
+    unblockScreen();
   }
 });

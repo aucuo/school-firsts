@@ -1,18 +1,14 @@
 
 import {Swiper} from 'swiper'
-import {Navigation, Pagination} from 'swiper/modules'
+import {Pagination} from 'swiper/modules'
 
-new Swiper('#teachersSwiper', {
-  modules: [Navigation, Pagination],
+new Swiper('#newsSwiper', {
+  modules: [Pagination],
   speed: 400,
   slidesPerView: 1.08,
   spaceBetween: 12,
-  navigation: {
-    nextEl: '#teachersSwiperNext',
-    prevEl: '#teachersSwiperPrev',
-  },
   pagination: {
-    el: '#teachersPagination',
+    el: '#newsPagination',
   },
   breakpoints: {
     768: {

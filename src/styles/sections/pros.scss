@@ -6,9 +6,20 @@
     &__list {
         @include m.flex();
         gap: 20px;
-        flex-wrap: wrap;
+
+        @media (max-width: 1450px) {
+            flex-wrap: wrap;
+        }
 
         @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    &__row {
+        @media (max-width: 1400px) {
+            align-items: stretch;
             flex-direction: column;
         }
     }
@@ -22,7 +33,7 @@
         cursor: pointer;
 
         @media (max-width: 768px) {
-            padding: 22px;
+            padding: 22px 16px;
         }
 
         &--blue {
@@ -68,7 +79,7 @@
 
             @media (max-width: 768px) {
                 gap: 18px;
-                margin-bottom: 24px;
+                margin-bottom: 32px;
             }
         }
 
@@ -108,11 +119,23 @@
             color: v.$color-gray;
             margin-bottom: 24px;
             font-size: 16px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
         }
 
         &__show {
             @include m.flex(center, center);
             gap: 10px;
+
+            svg {
+                @media (max-width: 768px) {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
         }
 
         &__link {

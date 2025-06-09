@@ -46,6 +46,11 @@
         width: 100%;
         overflow: hidden;
 
+        @media (max-width: 768px) {
+            padding: 22px;
+            border-radius: 18px 18px 0 0;
+        }
+
         &__close {
             z-index: 20;
             position: absolute;
@@ -57,6 +62,16 @@
             &:hover {
                 color: #c5c5c5;
             }
+
+            @media (max-width: 768px) {
+                top: 16px;
+                right: 16px;
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
         }
 
         &__title {
@@ -64,6 +79,10 @@
             margin-bottom: 40px;
             font-size: 28px;
             font-weight: 600;
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+            }
         }
 
         &__input {

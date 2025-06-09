@@ -5,6 +5,7 @@
 @use "base";
 @use "container";
 @use "header";
+@use "footer";
 
 // components
 @use "components/btn";
@@ -22,3 +23,5 @@
 @use "sections/practice";
 @use "sections/teachers";
 @use "sections/reviews";
+@use "sections/news";
+@use "sections/map";

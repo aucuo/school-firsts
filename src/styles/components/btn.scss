@@ -54,11 +54,26 @@
         height: 24px;
     }
 
+    @media (max-width: 768px) {
+        font-weight: 400;
+        height: 42px;
+        padding: 0 27.5px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
     // Размеры
     &--sm {
         padding: 0 24px;
         height: 46px;
         font-size: 18px;
+
+        @media (max-width: 768px) {
+            padding: 0 22px;
+        }
     }
 
     &--lg {
@@ -70,15 +85,41 @@
             width: 21px;
             height: 21px;
         }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            height: 48px;
+        }
     }
 
     &--circle {
         width: 58px;
         height: 58px;
         padding: 0;
+
         svg {
             width: 21px;
             height: 21px;
+        }
+
+        @media (max-width: 768px) {
+            width: 42px;
+            height: 42px;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            &-large {
+                width: 46px;
+                height: 46px;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
         }
     }
 
@@ -91,9 +132,18 @@
             width: 46px;
             height: 46px;
         }
+
+        &-active {
+            border: 1px solid v.$color-blue;
+        }
     }
 
     // Цветовые варианты
+    &--white-orange {
+        @include button-color(v.$color-white, v.$color-orange);
+        @include button-states(v.$color-light-orange, v.$color-orange);
+    }
+
     &--orange {
         @include button-color(v.$color-orange);
         @include button-states(v.$color-light-orange, v.$color-orange);

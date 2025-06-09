@@ -6,10 +6,18 @@
     @include m.flex(flex-start, stretch, column);
     height: 100vh;
 
+    @media (max-width: 768px) {
+        height: fit-content;
+    }
+
     &__wrapper {
         padding: 40px 0;
         flex: 1;
         overflow: hidden;
+
+        @media (max-width: 768px) {
+            padding: 18px 0 12px;
+        }
 
         .container {
             height: 100%;
@@ -19,6 +27,10 @@
     .slider {
         position: relative;
         height: 100%;
+
+        @media (max-width: 768px) {
+            height: 480px;
+        }
 
         .slide {
             position: relative;
@@ -41,6 +53,11 @@
                 bottom: 60px;
                 max-width: 580px;
                 color: v.$color-white;
+
+                @media (max-width: 768px) {
+                    left: 16px;
+                    bottom: 22px;
+                }
             }
 
             &__title {
@@ -49,8 +66,14 @@
                 margin-bottom: 18px;
                 font-weight: 700;
 
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+
                 span {
-                    color: v.$color-orange;
+                    @media (min-width: 769px) {
+                        color: v.$color-orange;
+                    }
                 }
             }
 
@@ -70,6 +93,11 @@
             position: absolute;
             right: 60px;
             bottom: 60px;
+
+            @media (max-width: 768px) {
+                right: 16px;
+                bottom: 22px;
+            }
 
             &__btn {
                 color: v.$color-blue;

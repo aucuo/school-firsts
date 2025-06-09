@@ -12,8 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 
-  <script type="module" crossorigin src="./assets/main-BfCipvzh.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-Bd72pfQK.css">
+  <script type="module" crossorigin src="./assets/main-DLeCRyDu.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-DuuKAifw.css">
 </head>
 <body>
 
@@ -64,6 +64,21 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="header__info info info--mobile">
+              <button class="info__call btn btn--circle btn--circle-large btn--white-orange">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#call"></use>
+                </svg>
+              </button>
+              <button class="info__burger btn btn--circle btn--circle-large btn--blue">
+                <svg class="info__burger-icon info__burger-icon--burger">
+                  <use xlink:href="./assets/sprite.svg#burger"></use>
+                </svg>
+                <svg class="info__burger-icon info__burger-icon--close">
+                  <use xlink:href="./assets/sprite.svg#close"></use>
+                </svg>
+              </button>
             </div>
           </div>
           <nav class="header__nav">
@@ -190,8 +205,119 @@
                 </li>
               </ul>
             </nav>
+            <div class="header__info info info--mobile">
+              <button class="info__call btn btn--circle btn--circle-large btn--white-orange">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#call"></use>
+                </svg>
+              </button>
+              <button class="info__burger btn btn--circle btn--circle-large btn--blue">
+                <svg class="info__burger-icon info__burger-icon--burger">
+                  <use xlink:href="./assets/sprite.svg#burger"></use>
+                </svg>
+                <svg class="info__burger-icon info__burger-icon--close">
+                  <use xlink:href="./assets/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="header-mobile">
+        <nav class="header-mobile__nav header__nav">
+          <ul class="header-mobile__nav-list header__nav-list nav-list">
+            <li class="nav-list__item">
+              <button class="nav-list__link">
+                Направления обучения
+              </button>
+              <div class="nav-list__inner nav-inner">
+                <ul class="nav-inner__wrapper">
+                  <li class="nav-inner__item">
+                    <a href="#" class="nav-inner__link">
+                      Профильное образование
+                    </a>
+                  </li>
+                  <li class="nav-inner__item">
+                    <a href="#" class="nav-inner__link">
+                      Дополнительное профильное образование
+                    </a>
+                  </li>
+                  <li class="nav-inner__item">
+                    <a href="#" class="nav-inner__link">
+                      Информационно-консультационные услуги
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Практика
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Преподаватели
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                О компании
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Дополнительные услуги
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-mobile__info header__info info">
+          <div class="info__item">
+            <div class="info__item-title">
+              <b>№ Л035-01256-60-006404</b>
+            </div>
+            <div class="info__item-text">
+              Выписка из реестра лицензий
+            </div>
+          </div>
+          <div class="info__item">
+            <div class="info__item-title">
+              <b>8 (911) 692-43-14</b>
+            </div>
+            <div class="info__item-text">
+              г. Великие Луки, Октябрьский пр-т., 79
+            </div>
+          </div>
+        </div>
+        <div class="header-mobile__langs">
+          <p class="header-mobile__langs-text">
+            Выберите нужный язык сайта
+          </p>
+          <div class="header-mobile__langs-list">
+            <button class="lang-choose__btn btn btn--lang btn--lang-active">
+              <img src="./assets/icons/lang-ru.svg" alt="Русский язык">
+            </button>
+            <button class="lang-choose__btn btn btn--lang">
+              <img src="./assets/icons/lang-by.svg" alt="Белорусский язык">
+            </button>
+            <button class="lang-choose__btn btn btn--lang">
+              <img src="./assets/icons/lang-uk.svg" alt="Украинский язык">
+            </button>
+            <button class="lang-choose__btn btn btn--lang">
+              <img src="./assets/icons/lang-kz.svg" alt="Казахский язык">
+            </button>
+          </div>
+        </div>
+
+        <button class="header-mobile__vision btn btn--sm">
+          Версия для слабовидящих
+        </button>
       </div>
     </header>
 
@@ -329,7 +455,7 @@
   <section class="pros-sec section">
     <div class="container">
       <div class="pros-sec__wrapper">
-        <div class="section__row">
+        <div class="pros-sec__row section__row">
           <h2 class="section__title section__title--line">
             АНО ДПО «УЧЕБНЫЙ ЦЕНТР «ШКОЛА ПЕРВЫХ»
           </h2>
@@ -612,6 +738,11 @@
                 <use xlink:href="./assets/sprite.svg#export"></use>
               </svg>
             </a>
+            <a href="#" class="section__link section__link--mobile btn btn--blue btn--circle">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#export"></use>
+              </svg>
+            </a>
             <div class="slider__navigation navigation">
               <button class="navigation__btn navigation__btn--prev btn btn--blue btn--circle" id="teachersSwiperPrev">
                 <svg>
@@ -703,6 +834,7 @@
           </div>
         </div>
       </div>
+      <div class="slider__pagination" id="teachersPagination"></div>
     </div>
   </section>
 
@@ -716,6 +848,11 @@
           <div class="section__actions">
             <a href="#" class="section__link">
               Смотреть все отзывы
+              <svg>
+                <use xlink:href="./assets/sprite.svg#export"></use>
+              </svg>
+            </a>
+            <a href="#" class="section__link section__link--mobile btn btn--blue btn--circle">
               <svg>
                 <use xlink:href="./assets/sprite.svg#export"></use>
               </svg>
@@ -866,6 +1003,7 @@
           </div>
         </div>
       </div>
+      <div class="slider__pagination" id="reviewsPagination"></div>
     </div>
 
     <div class="popup popup--blue" data-popup="review1">
@@ -892,10 +1030,10 @@
           практику: реальные рабочие ситуации, современное оборудование, чёткие инструкции. Преподаватели — настоящие
           профессионалы, с опытом работы в производстве. Объясняют доступно, всегда готовы помочь, чувствуется, что им
           не всё равно.
-          <br/><br/>
+          <br /><br />
           Во время обучения удалось систематизировать свои знания и получить новые навыки, которые сразу начал применять
           в работе. Благодаря этому стало проще принимать управленческие решения и выстраивать работу участка.
-          <br/><br/>
+          <br /><br />
           Если вы хотите развиваться, углубить свои компетенции или даже сменить профессию — очень рекомендую. Здесь
           действительно дают знания, которые работают.
         </p>
@@ -925,10 +1063,10 @@
           практику: реальные рабочие ситуации, современное оборудование, чёткие инструкции. Преподаватели — настоящие
           профессионалы, с опытом работы в производстве. Объясняют доступно, всегда готовы помочь, чувствуется, что им
           не всё равно.
-          <br/><br/>
+          <br /><br />
           Во время обучения удалось систематизировать свои знания и получить новые навыки, которые сразу начал применять
           в работе. Благодаря этому стало проще принимать управленческие решения и выстраивать работу участка.
-          <br/><br/>
+          <br /><br />
           Если вы хотите развиваться, углубить свои компетенции или даже сменить профессию — очень рекомендую. Здесь
           действительно дают знания, которые работают.
         </p>
@@ -958,10 +1096,10 @@
           практику: реальные рабочие ситуации, современное оборудование, чёткие инструкции. Преподаватели — настоящие
           профессионалы, с опытом работы в производстве. Объясняют доступно, всегда готовы помочь, чувствуется, что им
           не всё равно.
-          <br/><br/>
+          <br /><br />
           Во время обучения удалось систематизировать свои знания и получить новые навыки, которые сразу начал применять
           в работе. Благодаря этому стало проще принимать управленческие решения и выстраивать работу участка.
-          <br/><br/>
+          <br /><br />
           Если вы хотите развиваться, углубить свои компетенции или даже сменить профессию — очень рекомендую. Здесь
           действительно дают знания, которые работают.
         </p>
@@ -991,10 +1129,10 @@
           практику: реальные рабочие ситуации, современное оборудование, чёткие инструкции. Преподаватели — настоящие
           профессионалы, с опытом работы в производстве. Объясняют доступно, всегда готовы помочь, чувствуется, что им
           не всё равно.
-          <br/><br/>
+          <br /><br />
           Во время обучения удалось систематизировать свои знания и получить новые навыки, которые сразу начал применять
           в работе. Благодаря этому стало проще принимать управленческие решения и выстраивать работу участка.
-          <br/><br/>
+          <br /><br />
           Если вы хотите развиваться, углубить свои компетенции или даже сменить профессию — очень рекомендую. Здесь
           действительно дают знания, которые работают.
         </p>
@@ -1002,9 +1140,326 @@
     </div>
   </section>
 
-  <section class="section"></section>
-  <section class="section"></section>
-  <section class="section"></section>
+  <section class="news-sec section">
+    <div class="container">
+      <div class="section__row">
+        <h2 class="section__title">
+          Новости
+        </h2>
+        <a href="#" class="section__link">
+          Смотреть все отзывы
+          <svg>
+            <use xlink:href="./assets/sprite.svg#export"></use>
+          </svg>
+        </a>
+        <a href="#" class="section__link section__link--mobile btn btn--blue btn--circle">
+          <svg>
+            <use xlink:href="./assets/sprite.svg#export"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="section__slider-container container">
+      <div class="section__slider slider swiper" id="newsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="news-sec__item item">
+              <h3 class="item__title">
+                Открыт набор на новые программы обучения
+              </h3>
+              <p class="item__text">
+                Стартует приём на курсы для специалистов и начинающих. Успей записаться...
+              </p>
+              <div class="item__date">
+            <span class="item__date-day">
+              21
+            </span>
+                <div>
+                  <div class="item__date-month">
+                    янв
+                  </div>
+                  <div class="item__date-year">
+                    2025
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-sec__item item">
+              <h3 class="item__title">
+                На учебном полигоне установлено новое оборудование
+              </h3>
+              <p class="item__text">
+                Теперь слушатели проходят практику на современных промышленных станках...
+              </p>
+              <div class="item__date">
+            <span class="item__date-day">
+              16
+            </span>
+                <div>
+                  <div class="item__date-month">
+                    янв
+                  </div>
+                  <div class="item__date-year">
+                    2025
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-sec__item item">
+              <h3 class="item__title">
+                Наши выпускники — победители отраслевого чемпионата
+              </h3>
+              <p class="item__text">
+                Студенты центра заняли призовые места на региональном конкурсе рабочих профессий...
+              </p>
+              <div class="item__date">
+            <span class="item__date-day">
+              20
+            </span>
+                <div>
+                  <div class="item__date-month">
+                    дек
+                  </div>
+                  <div class="item__date-year">
+                    2024
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-sec__item item">
+              <h3 class="item__title">
+                Проведён мастер-класс от эксперта с производства
+              </h3>
+              <p class="item__text">
+                Гость поделился практическими кейсами и дал ценные советы слушателям центра...
+              </p>
+              <div class="item__date">
+            <span class="item__date-day">
+              05
+            </span>
+                <div>
+                  <div class="item__date-month">
+                    нояб
+                  </div>
+                  <div class="item__date-year">
+                    2024
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__pagination" id="newsPagination"></div>
+    </div>
+  </section>
+
+  <section class="map-sec section">
+    <div class="container">
+      <div class="map-sec__wrapper">
+        <div class="map-sec__contacts contacts">
+          <h2 class="contacts__title section__title">
+            Контакты
+          </h2>
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#call"></use>
+                </svg>
+              </div>
+              <div class="contacts__info">
+                <p class="contacts__name">
+                  Телефон
+                </p>
+                <p class="contacts__text">
+                  8 (911) 692-43-14
+                </p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <div class="contacts__info">
+                <p class="contacts__name">
+                  Адрес
+                </p>
+                <p class="contacts__text">
+                  Октябрьский пр-т., 79
+                </p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="contacts__info">
+                <p class="contacts__name">
+                  Режим работы
+                </p>
+                <p class="contacts__text">
+                  09:00 - 17:00
+                </p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#sms-notification"></use>
+                </svg>
+              </div>
+              <div class="contacts__info">
+                <p class="contacts__name">
+                  Email
+                </p>
+                <p class="contacts__text">
+                  info@school-firsts.ru
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-sec__map" id="map"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <svg>
+            <use xlink:href="./assets/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="footer__row">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list nav-list">
+              <li class="nav-list__item">
+                <a href="#">
+                  Сведения об образовательной организации
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#">
+                  Новости
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#">
+                  Министерство образования
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__nav-list nav-list">
+              <li class="nav-list__item">
+                <a href="#">
+                  Политика конфиденциальности
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#">
+                  Согласие на обработку персональных данных
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#">
+                  Согласие на рекламную и информационную рассылку
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts">
+            <div class="item item--phone footer__contacts-item">
+              <div class="item__name">
+                Телефон
+              </div>
+              <p class="item__text">
+                8 (911) 692-43-14
+              </p>
+            </div>
+            <div class="item item--addr footer__contacts-item">
+              <div class="item__name">
+                Адрес
+              </div>
+              <p class="item__text">
+                г. Великие Луки, Октябрьский пр-т., 79
+              </p>
+            </div>
+            <div class="item item--time footer__contacts-item">
+              <div class="item__name">
+                Режим работы
+              </div>
+              <p class="item__text">
+                09:00 - 17:00
+              </p>
+            </div>
+            <div class="item item--email footer__contacts-item">
+              <div class="item__name">
+                Email
+              </div>
+              <p class="item__text">
+                <a href="mailto:info@school-firsts.ru">
+                  info@school-firsts.ru
+                </a>
+              </p>
+            </div>
+            <div class="socials footer__contacts-socials">
+              <a href="#" class="socials__item">
+                <svg class="socials__item-icon">
+                  <use xlink:href="./assets/sprite.svg#vk-filled"></use>
+                </svg>
+                <svg class="socials__item-icon socials__item-icon--mobile socials__item-icon--vk">
+                  <use xlink:href="./assets/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="socials__item">
+                <svg class="socials__item-icon">
+                  <use xlink:href="./assets/sprite.svg#telegram-filled"></use>
+                </svg>
+                <svg class="socials__item-icon socials__item-icon--mobile socials__item-icon--telegram">
+                  <use xlink:href="./assets/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom footer__bottom footer__row">
+          <div class="bottom__info">
+            <p class="bottom__info-item bottom__info-item--copyright">
+              Copyright © 2025 Учебный центр "Школа первых"
+            </p>
+            <p class="bottom__info-item">
+              Выписка из реестра лицензий № Л035-01256-60-006404
+            </p>
+            <p  class="bottom__made-by bottom__made-by--mobile">
+              Разработано в
+              <a href="#">
+                Take&Make
+              </a>
+            </p>
+          </div>
+          <p  class="bottom__made-by">
+            Разработано в
+            <a href="#">
+              Take&Make
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </main>
 
 <div class="cookies">

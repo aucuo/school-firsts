@@ -26,7 +26,6 @@ burgerBtnEls && burgerBtnEls.forEach(btnEl => {
 
 mobileListButtonEls && mobileListButtonEls.forEach(btnEl => {
   const parentItemEl = btnEl.closest('.nav-list__item');
-  const innerItemEl = parentItemEl.querySelector('.nav-inner');
 
   btnEl.addEventListener('click', () => {
     parentItemEl.classList.toggle('nav-list__item--active');

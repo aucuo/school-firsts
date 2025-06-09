@@ -80,7 +80,7 @@
             }
 
             &:checked + label::before {
-                background: v.$color-blue url('assets/icons/success.svg') no-repeat center / 16px;
+                background: v.$color-blue url('./assets/icons/success.svg') no-repeat center / 16px;
             }
 
             &:disabled + label {

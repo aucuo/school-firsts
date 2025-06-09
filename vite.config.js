@@ -44,6 +44,11 @@ export default defineConfig({
           file,
         ])
       ),
+      output: {
+        // Путь для JS и CSS — прямо в корень
+        chunkFileNames: '[name].js',
+        assetFileNames: '[name].[ext]'
+      }
     },
   },
 })

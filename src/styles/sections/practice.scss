@@ -3,18 +3,11 @@
 @use "../variables" as v;
 
 .practice-sec {
-
-    &__wrapper {
-        @media (max-width: 768px) {
-            padding: 0 12px;
-        }
-    }
-
     &__title,
     &__text {
         width: 100%;
         text-align: center;
-        max-width: 650px;
+        max-width: 530px;
 
         @media (max-width: 768px) {
             text-align: left;
@@ -35,14 +28,7 @@
     &__card {
         flex: 1;
         min-height: 260px;
-
-        &:first-child {
-            border-radius: 0 18px 18px 0;
-        }
-
-        &:last-child {
-            border-radius: 18px 0 0 18px;
-        }
+        border-radius: 18px;
 
         &-title {
             width: 100%;

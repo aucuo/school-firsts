@@ -6,6 +6,7 @@
 @use "container";
 @use "header";
 @use "footer";
+@use "section";
 
 // components
 @use "components/btn";
@@ -15,15 +16,3 @@
 @use "components/application";
 @use "components/breadcrumbs";
 @use "components/popup";
-
-// sections
-@use "sections/section";
-@use "sections/hero";
-@use "sections/activities";
-@use "sections/pros";
-@use "sections/practice";
-@use "sections/teachers";
-@use "sections/reviews";
-@use "sections/news";
-@use "sections/map";
-@use "sections/study-directions";

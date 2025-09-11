@@ -1,0 +1,74 @@
+<div class="application" id="application">
+  <button class="application__btn btn btn--orange" data-popup-target="application">
+    <svg>
+      <use xlink:href="/assets/sprite.svg#message"></use>
+    </svg>
+    Оставить заявку
+  </button>
+  <div class="application__popup popup popup--blue" data-popup="application">
+    <div class="application__inner inner popup__inner pros pros--popup pros--orange">
+      <button class="inner__close" data-popup-close>
+        <svg>
+          <use xlink:href="/assets/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <form class="inner__form form" action="" id="applForm">
+        <h3 class="inner__title">
+          Заявка на обучение
+        </h3>
+        <div class="inner__input form-input">
+          <div class="form-input__editable">
+            <span contenteditable></span>
+            <label for="applName">Как вас зовут</label>
+            <input type="text" name="applName" id="applName" minlength="2" maxlength="20" hidden required>
+          </div>
+        </div>
+        <div class="inner__input form-input">
+          <div class="form-input__editable">
+            <span contenteditable></span>
+            <input type="tel" name="applPhone" id="applPhone" hidden required>
+          </div>
+        </div>
+        <button class="inner__btn btn btn--blue btn--lg" type="submit" disabled>
+          Отправить
+        </button>
+        <div class="inner__check form-check">
+          <input type="checkbox" name="applCheckbox" id="applCheckbox" required>
+          <label for="applCheckbox">
+          <span>
+            Согласен на обработку персональных данных
+            <a href="#">Политика конфиденциальности</a>
+          </span>
+          </label>
+        </div>
+      </form>
+      <div class="inner__result result result--success">
+        <div class="result__icon">
+          <svg>
+            <use xlink:href="/assets/sprite.svg#success"></use>
+          </svg>
+        </div>
+        <h3 class="result__title">
+          Спасибо за вашу заявку!
+        </h3>
+        <p class="result__text">
+          Мы свяжемся с вами в ближайшее время.
+        </p>
+      </div>
+      <div class="inner__result result result--error">
+        <div class="result__icon">
+          <svg>
+            <use xlink:href="/assets/sprite.svg#success"></use>
+          </svg>
+        </div>
+        <h3 class="result__title">
+          Ошибка сервера!
+        </h3>
+        <p class="result__text">
+          Пожалуйста, перезагрузите страницу<br />
+          или свяжитесь с нами другим способом.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

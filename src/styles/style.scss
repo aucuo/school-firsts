@@ -13,6 +13,7 @@
 @use "components/card";
 @use "components/cookies";
 @use "components/application";
+@use "components/breadcrumbs";
 @use "components/popup";
 
 // sections
@@ -25,3 +26,4 @@
 @use "sections/reviews";
 @use "sections/news";
 @use "sections/map";
+@use "sections/study-directions";

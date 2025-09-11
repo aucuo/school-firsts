@@ -1,0 +1,35 @@
+
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.breadcrumbs {
+    padding: 80px 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+
+    @media (max-width: 1100px) {
+        padding: 40px 0 0;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    &__list, &__item {
+        @include m.flex(flex-start);
+        gap: 14px;
+    }
+
+    &__item {
+        color: v.$color-blue;
+
+        &:not(:last-child) {
+            color: v.$color-gray;
+
+            &:after {
+                @include m.pseudo('/', block, static);
+            }
+        }
+    }
+}

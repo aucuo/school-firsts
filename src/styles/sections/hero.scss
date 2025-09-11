@@ -29,7 +29,7 @@
         height: 100%;
 
         @media (max-width: 768px) {
-            height: 550px;
+            height: 480px;
         }
 
         .slide {
@@ -92,11 +92,7 @@
                 margin-bottom: 18px;
 
                 @media (max-width: 768px) {
-                    font-size: 16px;
-
-                    br {
-                        display: none;
-                    }
+                    display: none;
                 }
             }
 

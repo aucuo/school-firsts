@@ -29,7 +29,7 @@ export default defineConfig({
         quality: 85,
       },
     }),
-    // forceReload(),
+    forceReload(),
   ],
 
   server: {

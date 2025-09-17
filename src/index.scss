@@ -1,9 +1,22 @@
 @use "styles/section";
 @use "styles/sections/hero";
 @use "styles/sections/activities";
-@use "styles/sections/pros";
+@use "sections/pros";
 @use "styles/sections/practice";
-@use "styles/sections/teachers";
-@use "styles/sections/reviews";
-@use "styles/sections/news";
-@use "styles/sections/map";
+@use "sections/map";
+
+.section {
+    &__title {
+        position: relative;
+        font-size: 3.8rem;
+        max-width: 600px;
+
+        @media (max-width: 1400px) {
+            max-width: unset;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 2.4rem;
+        }
+    }
+}

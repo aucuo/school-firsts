@@ -41,8 +41,48 @@ h2 {
     font-size: 28px;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 16px;
+}
+
 p {
     line-height: 130%;
+}
+
+ul.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li {
+        display: inline-flex;
+        position: relative;
+
+        &:before {
+            content: '—';
+            display: block;
+            position: static;
+            color: v.$color-blue;
+            margin-right: 10px;
+            margin-top: -4px;
+            font-weight: 500;
+        }
+
+        span {
+            color: v.$color-blue;
+        }
+    }
+}
+
+small {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
 }
 
 [contenteditable] {

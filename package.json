@@ -12,6 +12,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@types/node": "^24.3.1",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-jsdoc": "^50.6.17",
@@ -26,7 +27,6 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
-    "@types/node": "^22.15.21",
     "@yandex/ymaps3-default-ui-theme": "^0.0.19",
     "imask": "^7.6.1",
     "sass": "^1.89.0",

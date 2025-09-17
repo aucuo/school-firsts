@@ -1,0 +1,54 @@
+
+<section class="section">
+  <div class="container">
+    <div class="consultation" id="consultation">
+      <div class="consultation__info">
+        <div class="consultation__badges">
+          <div class="consultation__icon">
+            <svg>
+              <use xlink:href="/assets/sprite.svg#message"></use>
+            </svg>
+          </div>
+          <div class="consultation__name">
+            Консультация
+          </div>
+        </div>
+        <h2>
+          Поможем сделать<br/>
+          правильный выбор
+        </h2>
+        <p>
+          Подберём программу под ваш опыт и цели.<br/>
+          Заполните форму — и получите персональную рекомендацию.
+        </p>
+      </div>
+      <form class="consultation__form form" action="" id="consultForm">
+        <div class="consultation__input form-input">
+          <div class="form-input__editable" data-required="">
+            <span contenteditable=""></span>
+            <label for="consultName">Как вас зовут</label>
+            <input type="text" name="consultName" id="consultName" minlength="2" maxlength="20" hidden="" required="">
+          </div>
+        </div>
+        <div class="consultation__input form-input">
+          <div class="form-input__editable" data-required="">
+            <span contenteditable="">+7 (___) ___-__-__</span>
+            <input type="tel" name="consultPhone" id="consultPhone" hidden="" required="">
+          </div>
+        </div>
+        <button class="consultation__btn btn btn--blue btn--lg" type="submit" disabled="">
+          Отправить
+        </button>
+        <div class="consultation__check form-check">
+          <input type="checkbox" name="consultCheckbox" id="consultCheckbox" required="">
+          <label for="consultCheckbox">
+          <span>
+            Согласен на обработку персональных данных
+            <a href="#">Политика конфиденциальности</a>
+          </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

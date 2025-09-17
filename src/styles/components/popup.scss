@@ -2,6 +2,10 @@
 @use "../mixins" as m;
 @use "../variables" as v;
 
+[data-popup-target] {
+    cursor: pointer;
+}
+
 .popup {
     display: none;
     justify-content: center;

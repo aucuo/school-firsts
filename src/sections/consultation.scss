@@ -1,0 +1,83 @@
+
+@use "../styles/mixins" as m;
+@use "../styles/variables" as v;
+
+.consultation {
+    @include m.flex(space-between);
+    max-width: 1400px;
+    padding: 70px 60px;
+    background-color: v.$color-white;
+    border-radius: 18px;
+    gap: 20px;
+    margin: 0 auto;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 500px;
+
+        p {
+            margin-top: auto;
+        }
+    }
+
+    &__badges {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__icon {
+        @include m.flex(center, center);
+        width: 54px;
+        height: 54px;
+        color: v.$color-blue;
+        background-color: v.$color-light-blue;
+        border-radius: 99px;
+    }
+
+    &__name {
+        @include m.flex(center, center);
+        height: 54px;
+        padding: 0 32px;
+        color: v.$color-white;
+        background-color: v.$color-orange;
+        border-radius: 99px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .form-input {
+            &__editable {
+                background-color: v.$color-light-blue-gray;
+            }
+        }
+    }
+
+    &__check a {
+        text-decoration: underline;
+        color: v.$color-blue;
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 32px;
+        padding: 24px 12px;
+
+        &__info {
+            display: block;
+            max-width: unset;
+
+            h2 {
+                margin-bottom: 12px;
+            }
+        }
+
+        &__badges {
+            margin-bottom: 40px;
+        }
+    }
+}

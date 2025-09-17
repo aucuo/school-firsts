@@ -138,7 +138,7 @@
 
                     &:after {
                         @include m.pseudo();
-                        background: transparent url('./assets/icons/chevron-down.svg') no-repeat center / 14px;
+                        background: transparent url('/assets/icons/chevron-down.svg') no-repeat center / 14px;
                         width: 14px;
                         inset: 0 0 0 auto;
                         transition: transform .2s ease-in-out;

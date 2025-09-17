@@ -1,0 +1,25 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.link {
+    position: relative;
+    @include m.flex(flex-start, center);
+    gap: 12px;
+    color: v.$color-blue;
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    &--mobile {
+        @include m.flex(center, center);
+        color: v.$color-white;
+        padding: 0;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

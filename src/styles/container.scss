@@ -14,3 +14,18 @@
         padding: 0 12px;
     }
 }
+
+.row {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
+
+.col {
+    position: relative;
+    flex: 50%;
+}

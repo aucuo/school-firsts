@@ -31,17 +31,6 @@
     }
 
     &__title {
-        position: relative;
-        font-size: 3.8rem;
-        max-width: 600px;
-
-        @media (max-width: 1400px) {
-            max-width: unset;
-        }
-
-        @media (max-width: 1024px) {
-            font-size: 2.4rem;
-        }
 
         &--line {
             @media (min-width: 1401px) {
@@ -68,47 +57,34 @@
         }
     }
 
-    &__actions {
+    .actions {
         @include m.flex(flex-end, center);
         gap: 40px;
-    }
 
-    &__link {
-        position: relative;
-        @include m.flex(flex-start, center);
-        gap: 12px;
-        padding-right: 40px;
-        color: v.$color-blue;
+        &__link {
 
-        &:after {
-            @include m.pseudo();
-            right: 0;
-            background-color: v.$color-black;
-            width: 1px;
-            height: 30px;
-            opacity: .08;
-        }
+            &:not(&--mobile) {
+                padding-right: 40px;
 
-        svg {
-            width: 18px;
-            height: 18px;
-        }
-
-        &--mobile {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            display: none;
+                &:after {
+                    @include m.pseudo();
+                    right: 0;
+                    background-color: v.$color-black;
+                    width: 1px;
+                    height: 30px;
+                    opacity: .08;
+                }
+            }
 
             &--mobile {
-                @include m.flex(center, center);
-                color: v.$color-white;
-                padding: 0;
+                display: none;
+            }
 
-                svg {
-                    width: 24px;
-                    height: 24px;
+            @media (max-width: 768px) {
+                display: none;
+
+                &--mobile {
+                    display: flex;
                 }
             }
         }

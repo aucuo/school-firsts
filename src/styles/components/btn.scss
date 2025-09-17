@@ -154,6 +154,11 @@
         @include button-states(v.$color-light-blue, v.$color-blue);
     }
 
+    &--light-blue {
+        @include button-color(v.$color-light-blue, v.$color-blue);
+        @include button-states(v.$color-blue, v.$color-light-blue);
+    }
+
     &--violet {
         @include button-color(v.$color-violet);
         @include button-states(v.$color-light-violet, v.$color-violet);

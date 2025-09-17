@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
-import { getHtmlFiles, forceReload } from './config/utils.js'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { resolve } from 'path';
 import injectHTML from 'vite-plugin-html-inject'
+
+const _dirname = import.meta.dirname;
 
 export default defineConfig({
   base: './',
@@ -31,7 +32,6 @@ export default defineConfig({
         quality: 85,
       },
     }),
-    forceReload(),
     injectHTML()
   ],
 
@@ -42,7 +42,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(_dirname, 'src'),
     },
   },
 
@@ -52,9 +52,15 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'),
-        studyDirections: resolve(__dirname, 'src/pages/studyDirections/index.html'),
-        profStudy: resolve(__dirname, 'src/pages/studyDirections/index.html'),
+        main: resolve(_dirname, 'src/index.html'),
+
+        study: resolve(_dirname, 'src/pages/study/index.html'),
+        studyProf: resolve(_dirname, 'src/pages/study/prof/index.html'),
+        studyDirection: resolve(_dirname, 'src/pages/study/direction/index.html'),
+        studyDopprof: resolve(_dirname, 'src/pages/study/dopprof/index.html'),
+        studyInfoServices: resolve(_dirname, 'src/pages/study/infoservices/index.html'),
+
+        about: resolve(_dirname, 'src/pages/about/index.html'),
       },
       output: {
         // Путь для JS и CSS — прямо в корень

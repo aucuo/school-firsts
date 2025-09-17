@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Профессиональное обучение</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <script type="module" crossorigin src="../../../popup.js"></script>
+  <script type="module" crossorigin src="../../../consultation.js"></script>
+  <link rel="stylesheet" crossorigin href="../../../popup.css">
+  <link rel="stylesheet" crossorigin href="../../../consultation.css">
+  <link rel="stylesheet" crossorigin href="../../../diplomas.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__row">
+        <a href="/" class="header__logo">
+          <img src="../../../assets/icons/logo-colored.svg" alt="Логотип Школа Перввых">
+        </a>
+        <div class="header__info info">
+          <div class="info__item">
+            <div class="info__item-title">
+              <b>№ Л035-01256-60-006404</b>
+            </div>
+            <div class="info__item-text">
+              Выписка из реестра лицензий
+            </div>
+          </div>
+          <div class="info__item">
+            <div class="info__item-title">
+              <b>8 (911) 692-43-14</b>
+            </div>
+            <div class="info__item-text">
+              г. Великие Луки, Октябрьский пр-т., 79
+            </div>
+          </div>
+          <div class="info__buttons">
+            <button class="btn btn--sm">
+              Версия для слабовидящих
+            </button>
+            <div class="lang-choose">
+              <button class="lang-choose__btn btn btn--lang">
+                <img src="../../../assets/icons/lang-ru.svg" alt="Русский язык">
+              </button>
+              <div class="lang-choose__other">
+                <button class="lang-choose__btn btn btn--lang">
+                  <img src="../../../assets/icons/lang-by.svg" alt="Белорусский язык">
+                </button>
+                <button class="lang-choose__btn btn btn--lang">
+                  <img src="../../../assets/icons/lang-uk.svg" alt="Украинский язык">
+                </button>
+                <button class="lang-choose__btn btn btn--lang">
+                  <img src="../../../assets/icons/lang-kz.svg" alt="Казахский язык">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__info info info--mobile">
+          <button class="info__call btn btn--circle btn--circle-large btn--white-orange">
+            <svg>
+              <use xlink:href="../../../assets/sprite.svg#call"></use>
+            </svg>
+          </button>
+          <button class="info__burger btn btn--circle btn--circle-large btn--blue">
+            <svg class="info__burger-icon info__burger-icon--burger">
+              <use xlink:href="../../../assets/sprite.svg#burger"></use>
+            </svg>
+            <svg class="info__burger-icon info__burger-icon--close">
+              <use xlink:href="../../../assets/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list nav-list">
+          <li class="nav-list__item">
+            <a href="/pages/study/" class="nav-list__link">
+              Направления обучения
+            </a>
+            <div class="nav-list__inner nav-inner">
+              <ul class="nav-inner__wrapper">
+                <li class="nav-inner__item">
+                  <a href="/pages/study/prof/" class="nav-inner__link">
+                    Профильное образование
+                  </a>
+                </li>
+                <li class="nav-inner__item">
+                  <a href="/pages/study/dopprof/" class="nav-inner__link">
+                    Дополнительное профильное образование
+                  </a>
+                </li>
+                <li class="nav-inner__item">
+                  <a href="/pages/study/infoservices/" class="nav-inner__link">
+                    Информационно-консультационные услуги
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link">
+              Практика
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link">
+              Преподаватели
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link">
+              Отзывы
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="/pages/about/" class="nav-list__link">
+              О компании
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link">
+              Дополнительные услуги
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header-fixed">
+    <div class="container">
+      <div class="header-fixed__wrapper">
+        <a href="/" class="header-fixed__logo">
+          <img src="../../../assets/icons/logo-colored.svg" alt="Логотип Школа Перввых">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="/pages/study/" class="nav-list__link">
+                Направления обучения
+              </a>
+              <div class="nav-list__inner nav-inner">
+                <ul class="nav-inner__wrapper">
+                  <li class="nav-inner__item">
+                    <a href="/pages/study/prof/" class="nav-inner__link">
+                      Профильное образование
+                    </a>
+                  </li>
+                  <li class="nav-inner__item">
+                    <a href="/pages/study/dopprof/" class="nav-inner__link">
+                      Дополнительное профильное образование
+                    </a>
+                  </li>
+                  <li class="nav-inner__item">
+                    <a href="/pages/study/infoservices/" class="nav-inner__link">
+                      Информационно-консультационные услуги
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Практика
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Преподаватели
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="/pages/about/" class="nav-list__link">
+                О компании
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Дополнительные услуги
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Вакансии
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">
+                Стипендия
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__info info info--mobile">
+          <button class="info__call btn btn--circle btn--circle-large btn--white-orange">
+            <svg>
+              <use xlink:href="../../../assets/sprite.svg#call"></use>
+            </svg>
+          </button>
+          <button class="info__burger btn btn--circle btn--circle-large btn--blue">
+            <svg class="info__burger-icon info__burger-icon--burger">
+              <use xlink:href="../../../assets/sprite.svg#burger"></use>
+            </svg>
+            <svg class="info__burger-icon info__burger-icon--close">
+              <use xlink:href="../../../assets/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <nav class="header-mobile__nav header__nav">
+      <ul class="header-mobile__nav-list header__nav-list nav-list">
+        <li class="nav-list__item">
+          <button class="nav-list__link">
+            Направления обучения
+          </button>
+          <div class="nav-list__inner nav-inner">
+            <ul class="nav-inner__wrapper">
+              <li class="nav-inner__item">
+                <a href="/pages/study/prof/" class="nav-inner__link">
+                  Профильное образование
+                </a>
+              </li>
+              <li class="nav-inner__item">
+                <a href="/pages/study/dopprof/" class="nav-inner__link">
+                  Дополнительное профильное образование
+                </a>
+              </li>
+              <li class="nav-inner__item">
+                <a href="/pages/study/infoservices/" class="nav-inner__link">
+                  Информационно-консультационные услуги
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">
+            Практика
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">
+            Преподаватели
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">
+            Отзывы
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="/pages/about/" class="nav-list__link">
+            О компании
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">
+            Дополнительные услуги
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-mobile__info header__info info">
+      <div class="info__item">
+        <div class="info__item-title">
+          <b>№ Л035-01256-60-006404</b>
+        </div>
+        <div class="info__item-text">
+          Выписка из реестра лицензий
+        </div>
+      </div>
+      <div class="info__item">
+        <div class="info__item-title">
+          <b>8 (911) 692-43-14</b>
+        </div>
+        <div class="info__item-text">
+          г. Великие Луки, Октябрьский пр-т., 79
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile__langs">
+      <p class="header-mobile__langs-text">
+        Выберите нужный язык сайта
+      </p>
+      <div class="header-mobile__langs-list">
+        <button class="lang-choose__btn btn btn--lang btn--lang-active">
+          <img src="../../../assets/icons/lang-ru.svg" alt="Русский язык">
+        </button>
+        <button class="lang-choose__btn btn btn--lang">
+          <img src="../../../assets/icons/lang-by.svg" alt="Белорусский язык">
+        </button>
+        <button class="lang-choose__btn btn btn--lang">
+          <img src="../../../assets/icons/lang-uk.svg" alt="Украинский язык">
+        </button>
+        <button class="lang-choose__btn btn btn--lang">
+          <img src="../../../assets/icons/lang-kz.svg" alt="Казахский язык">
+        </button>
+      </div>
+    </div>
+
+    <button class="header-mobile__vision btn btn--sm">
+      Версия для слабовидящих
+    </button>
+  </div>
+</header>
+
+
+<div class="breadcrumbs">
+  <div class="container">
+    <nav class="breadcrumbs__nav" aria-label="Навигация">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="/" class="breadcrumbs__link">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="/" class="breadcrumbs__link">
+            Направления обучения
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">
+              Профессиональное обучение
+            </span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main class="study">
+  <div class="container">
+    <section class="section">
+      <div class="row">
+        <div class="col">
+          <div class="study__info info">
+            <div class="info__badge">
+              <img src="../../../assets/images/reviews/5.jpg" alt="" class="info__badge-image">
+              <div class="info__badge-text">
+                Программы
+              </div>
+            </div>
+            <h1>Информационно-консультационные услуги</h1>
+            <h3>Прорабатываем новые грани лидера от личных целей до бизнес-результатов</h3>
+            <p>
+              Учебный центр оказывает информационно-консультационные услуги, предоставляя экспертную поддержку по вопросам профессионального развития и карьерного роста. Все тренинги построены на сочетании теории и практики, что позволяет участникам сразу же применять полученные знания в повседневной рабочей деятельности.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="study__image">
+            <img src="../../../assets/images/activities/3.jpg" alt="">
+            <div class="study__access access">
+              <div class="access__icon">
+                <svg>
+                  <use xlink:href="../../../assets/sprite.svg#note"></use>
+                </svg>
+              </div>
+              <div class="access__text">
+                <small>
+                  Обучение доступно
+                </small>
+                <p>
+                  С аттестатом об основном общем образовании
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section diplomas">
+      <div class="diploma">
+        <img src="../../../assets/images/diplomas/3.png" alt="" class="diploma__img" width="240" height="170">
+        <div class="diploma__info">
+          <h3>Свидетельство
+            о профессии рабочего </h3>
+          <a href="#" class="link">
+            Открыть документ
+            <svg>
+              <use xlink:href="../../../assets/sprite.svg#export"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="diploma">
+        <img src="../../../assets/images/diplomas/4.png" alt="" class="diploma__img" width="240" height="170">
+        <div class="diploma__info">
+          <h3>Диплом о профессиональной переподготовке</h3>
+          <a href="#" class="link">
+            Открыть документ
+            <svg>
+              <use xlink:href="../../../assets/sprite.svg#export"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="diploma">
+        <img src="../../../assets/images/diplomas/5.png" alt="" class="diploma__img" width="240" height="170">
+        <div class="diploma__info">
+          <h3>Удостоверение о повышении
+            квалификации</h3>
+          <a href="#" class="link">
+            Открыть документ
+            <svg>
+              <use xlink:href="../../../assets/sprite.svg#export"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+  <div class="programs">
+    <h2>Список программ обучения</h2>
+
+    <div class="programs__list">
+      <div class="programs__card card shadow-bottom">
+        <div class="card__info">
+          <div class="card__badge">
+            <small>
+              Срок обучения — <span>8 часов</span>
+            </small>
+          </div>
+          <h3 class="card__title">
+            Основы бережливого производства
+          </h3>
+          <p class="card__text">
+            Информационно-консультационные услуги
+          </p>
+        </div>
+        <div class="card__link btn btn--circle">
+          <svg>
+            <use xlink:href="../../../assets/sprite.svg#export"></use>
+          </svg>
+        </div>
+        <img src="../../../assets/images/programs/5.png" alt="" class="card__image">
+      </div>
+      <div class="programs__card card shadow-bottom">
+        <div class="card__info">
+          <div class="card__badge">
+            <small>
+              Срок обучения — <span>8 часов</span>
+            </small>
+          </div>
+          <h3 class="card__title">
+            Организация рабочих мест  по системе 5С
+          </h3>
+          <p class="card__text">
+            Информационно-консультационные услуги
+          </p>
+        </div>
+        <div class="card__link btn btn--circle">
+          <svg>
+            <use xlink:href="../../../assets/sprite.svg#export"></use>
+          </svg>
+        </div>
+        <img src="../../../assets/images/programs/6.png" alt="" class="card__image">
+      </div>
+      <div class="programs__card card shadow-bottom">
+        <div class="card__info">
+          <div class="card__badge">
+            <small>
+              Срок обучения — <span>24 часа</span>
+            </small>
+          </div>
+          <h3 class="card__title">
+            Правила и этикет деловой переписки
+          </h3>
+          <p class="card__text">
+            Информационно-консультационные услуги
+          </p>
+        </div>
+        <div class="card__link btn btn--circle">
+          <svg>
+            <use xlink:href="../../../assets/sprite.svg#export"></use>
+          </svg>
+        </div>
+        <img src="../../../assets/images/programs/7.png" alt="" class="card__image">
+      </div>
+      <div class="programs__card card shadow-bottom">
+        <div class="card__info">
+          <div class="card__badge">
+            <small>
+              Срок обучения — <span>40 часов</span>
+            </small>
+          </div>
+          <h3 class="card__title">
+            Тренинг по коммуникации
+          </h3>
+          <p class="card__text">
+            Информационно-консультационные услуги
+          </p>
+        </div>
+        <div class="card__link btn btn--circle">
+          <svg>
+            <use xlink:href="../../../assets/sprite.svg#export"></use>
+          </svg>
+        </div>
+        <img src="../../../assets/images/programs/8.png" alt="" class="card__image">
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+</main>
+
+<section class="section">
+  <div class="container">
+    <div class="consultation" id="consultation">
+      <div class="consultation__info">
+        <div class="consultation__badges">
+          <div class="consultation__icon">
+            <svg>
+              <use xlink:href="../../../assets/sprite.svg#message"></use>
+            </svg>
+          </div>
+          <div class="consultation__name">
+            Консультация
+          </div>
+        </div>
+        <h2>
+          Поможем сделать<br/>
+          правильный выбор
+        </h2>
+        <p>
+          Подберём программу под ваш опыт и цели.<br/>
+          Заполните форму — и получите персональную рекомендацию.
+        </p>
+      </div>
+      <form class="consultation__form form" action="" id="consultForm">
+        <div class="consultation__input form-input">
+          <div class="form-input__editable" data-required="">
+            <span contenteditable=""></span>
+            <label for="consultName">Как вас зовут</label>
+            <input type="text" name="consultName" id="consultName" minlength="2" maxlength="20" hidden="" required="">
+          </div>
+        </div>
+        <div class="consultation__input form-input">
+          <div class="form-input__editable" data-required="">
+            <span contenteditable="">+7 (___) ___-__-__</span>
+            <input type="tel" name="consultPhone" id="consultPhone" hidden="" required="">
+          </div>
+        </div>
+        <button class="consultation__btn btn btn--blue btn--lg" type="submit" disabled="">
+          Отправить
+        </button>
+        <div class="consultation__check form-check">
+          <input type="checkbox" name="consultCheckbox" id="consultCheckbox" required="">
+          <label for="consultCheckbox">
+          <span>
+            Согласен на обработку персональных данных
+            <a href="#">Политика конфиденциальности</a>
+          </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <svg>
+          <use xlink:href="../../../assets/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <div class="footer__row">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#">
+                Сведения об образовательной организации
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#">
+                Новости
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#">
+                Министерство образования
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#">
+                Согласие на обработку персональных данных
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#">
+                Согласие на рекламную и информационную рассылку
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <div class="item item--phone footer__contacts-item">
+            <div class="item__name">
+              Телефон
+            </div>
+            <p class="item__text">
+              8 (911) 692-43-14
+            </p>
+          </div>
+          <div class="item item--addr footer__contacts-item">
+            <div class="item__name">
+              Адрес
+            </div>
+            <p class="item__text">
+              г. Великие Луки, Октябрьский пр-т., 79
+            </p>
+          </div>
+          <div class="item item--time footer__contacts-item">
+            <div class="item__name">
+              Режим работы
+            </div>
+            <p class="item__text">
+              09:00 - 17:00
+            </p>
+          </div>
+          <div class="item item--email footer__contacts-item">
+            <div class="item__name">
+              Email
+            </div>
+            <p class="item__text">
+              <a href="mailto:info@school-firsts.ru">
+                info@school-firsts.ru
+              </a>
+            </p>
+          </div>
+          <div class="socials footer__contacts-socials">
+            <a href="#" class="socials__item">
+              <svg class="socials__item-icon">
+                <use xlink:href="../../../assets/sprite.svg#vk-filled"></use>
+              </svg>
+              <svg class="socials__item-icon socials__item-icon--mobile socials__item-icon--vk">
+                <use xlink:href="../../../assets/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials__item">
+              <svg class="socials__item-icon">
+                <use xlink:href="../../../assets/sprite.svg#telegram-filled"></use>
+              </svg>
+              <svg class="socials__item-icon socials__item-icon--mobile socials__item-icon--telegram">
+                <use xlink:href="../../../assets/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom footer__bottom footer__row">
+        <div class="bottom__info">
+          <p class="bottom__info-item bottom__info-item--copyright">
+            Copyright © 2025 Учебный центр "Школа первых"
+          </p>
+          <p class="bottom__info-item">
+            Выписка из реестра лицензий № Л035-01256-60-006404
+          </p>
+          <p  class="bottom__made-by bottom__made-by--mobile">
+            Разработано в
+            <a href="#">
+              Take&Make
+            </a>
+          </p>
+        </div>
+        <p  class="bottom__made-by">
+          Разработано в
+          <a href="#">
+            Take&Make
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="application" id="application">
+  <button class="application__btn btn btn--orange" data-popup-target="application">
+    <svg>
+      <use xlink:href="../../../assets/sprite.svg#message"></use>
+    </svg>
+    Оставить заявку
+  </button>
+  <div class="application__popup popup popup--blue" data-popup="application">
+    <div class="application__inner inner popup__inner pros pros--popup pros--orange">
+      <button class="inner__close" data-popup-close>
+        <svg>
+          <use xlink:href="../../../assets/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <form class="inner__form form" action="" id="applForm">
+        <h3 class="inner__title">
+          Заявка на обучение
+        </h3>
+        <div class="inner__input form-input">
+          <div class="form-input__editable">
+            <span contenteditable></span>
+            <label for="applName">Как вас зовут</label>
+            <input type="text" name="applName" id="applName" minlength="2" maxlength="20" hidden required>
+          </div>
+        </div>
+        <div class="inner__input form-input">
+          <div class="form-input__editable">
+            <span contenteditable></span>
+            <input type="tel" name="applPhone" id="applPhone" hidden required>
+          </div>
+        </div>
+        <button class="inner__btn btn btn--blue btn--lg" type="submit" disabled>
+          Отправить
+        </button>
+        <div class="inner__check form-check">
+          <input type="checkbox" name="applCheckbox" id="applCheckbox" required>
+          <label for="applCheckbox">
+          <span>
+            Согласен на обработку персональных данных
+            <a href="#">Политика конфиденциальности</a>
+          </span>
+          </label>
+        </div>
+      </form>
+      <div class="inner__result result result--success">
+        <div class="result__icon">
+          <svg>
+            <use xlink:href="../../../assets/sprite.svg#success"></use>
+          </svg>
+        </div>
+        <h3 class="result__title">
+          Спасибо за вашу заявку!
+        </h3>
+        <p class="result__text">
+          Мы свяжемся с вами в ближайшее время.
+        </p>
+      </div>
+      <div class="inner__result result result--error">
+        <div class="result__icon">
+          <svg>
+            <use xlink:href="../../../assets/sprite.svg#success"></use>
+          </svg>
+        </div>
+        <h3 class="result__title">
+          Ошибка сервера!
+        </h3>
+        <p class="result__text">
+          Пожалуйста, перезагрузите страницу<br />
+          или свяжитесь с нами другим способом.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cookies">
+  <div class="cookies__text">
+    Продолжая использовать сайт,<br />
+    Вы соглашаетесь на использование файлов <a href="#">cookie</a>
+  </div>
+  <button class="cookies__btn btn btn--sm">
+    ОК
+  </button>
+</div>
+
+</body>
+</html>
